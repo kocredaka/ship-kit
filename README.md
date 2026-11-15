@@ -17,8 +17,8 @@ network config differs.
 > code with **no third-party audit**.
 >
 > **Setup note:** this repo carries no vendored dependencies. After cloning,
-> run `forge install foundry-rs/forge-std --no-commit` once (or clone with
-> `--recursive`) so `lib/forge-std` exists before `forge build`.
+> run `forge install foundry-rs/forge-std --no-commit` once
+> so `lib/forge-std` exists before `forge build`.
 
 ## What's inside
 
