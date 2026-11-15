@@ -19,3 +19,6 @@ docs/
 .env.*
 !.env.example
 .env*
+
+# Installed dependencies (not vendored)
+lib/
