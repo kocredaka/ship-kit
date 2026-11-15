@@ -17,14 +17,13 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
-          submodules: recursive
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
       - name: Install forge-std if missing
         run: |
-          if [ ! -d lib/forge-std ]; then forge install foundry-rs/forge-std --no-commit; fi
+          if [ ! -f lib/forge-std/src/Test.sol ]; then forge install foundry-rs/forge-std --no-commit; fi
 
       - name: Show Forge version
         run: forge --version
